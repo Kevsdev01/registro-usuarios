@@ -1,0 +1,17 @@
+{
+  "name": "registro-usuarios",
+  "version": "1.0.0",
+  "description": "Registro de usuarios con Node.js, Express y MySQL (MVC + fetch)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.14.0"
+  }
+}

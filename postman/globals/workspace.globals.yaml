@@ -1,0 +1,8 @@
+name: Globals
+values:
+  - key: adminToken
+    enabled: true
+    secret: true
+  - key: instructorToken
+    enabled: true
+    secret: true

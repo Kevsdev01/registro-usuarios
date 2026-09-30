@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Iniciar sesión</h1>
+    <p>Ingresa con tu usuario y contraseña.</p>
+  </header>
+
+  <main class="layout">
+    <form id="loginForm" class="panel form" novalidate style="max-width: 420px; margin: 0 auto;">
+      <fieldset>
+        <legend>Acceso</legend>
+
+        <label class="field">
+          <span>Nombre de usuario</span>
+          <input name="username" maxlength="50" autocomplete="username" required autofocus>
+        </label>
+
+        <label class="field">
+          <span>Contraseña</span>
+          <div class="password">
+            <input name="password" type="password" autocomplete="current-password" required>
+            <button type="button" class="ghost" id="togglePassword" aria-pressed="false">Mostrar</button>
+          </div>
+        </label>
+      </fieldset>
+
+      <div class="actions">
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        <button type="submit" class="primary" id="submitBtn">Ingresar</button>
+      </div>
+    </form>
+  </main>
+
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>
